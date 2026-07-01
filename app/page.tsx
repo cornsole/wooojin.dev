@@ -48,13 +48,13 @@ type Project = {
 
 const timeline = [
   {
-    period: "Elementary School",
-    items: ["Started operating Minecraft servers"],
+    period: "Elementary",
+    items: ["First Minecraft Server"],
   },
   {
     period: "Middle School",
     items: [
-      "Built dedicated home server",
+      "Home Server Build",
       "Remote Desktop",
       "SSH",
       "SFTP",
@@ -65,7 +65,7 @@ const timeline = [
     ],
   },
   {
-    period: "Middle School → High School",
+    period: "Middle → High",
     items: [
       "Proxmox",
       "Virtual Machines",
@@ -80,10 +80,10 @@ const timeline = [
     period: "High School",
     items: [
       "Arch Linux Mirror",
-      "Startup Collaboration",
-      "School Information System",
-      "Backend Development",
-      "Server Administration",
+      "Startup Collab",
+      "School Info System",
+      "Backend Dev",
+      "Server Management",
     ],
   },
 ];
@@ -116,89 +116,89 @@ const skills = [
 
 const projects: Project[] = [
   {
-    title: "Minecraft Server Infrastructure",
+    title: "Minecraft 서버 인프라",
     icon: Server,
     description:
-      "Self-hosted server operations focused on uptime, performance optimization, and network management.",
+      "업타임, 성능 최적화, 네트워크 관리를 중심으로 한 자체 서버 운영",
     tech: ["Linux", "Network Management", "Performance Tuning"],
     role: "Infrastructure Engineer",
     challenges:
-      "Balancing low latency with stable resource usage under concurrent traffic.",
+      "동시 트래픽 처리 상황에서 지연 시간과 리소스 사용량의 균형 유지",
     lessons:
-      "Reliable infrastructure starts with observability and predictable operations playbooks.",
+      "안정적인 인프라는 관측 가능성과 예측 가능한 운영 플레이북에서 비롯된다",
   },
   {
     title: "HomeLab",
     icon: MonitorCog,
     description:
-      "Multi-VM Proxmox environment for service isolation and network segmentation testing.",
-    tech: ["Proxmox VE", "Virtual Machines", "Segmentation"],
-    role: "Systems Administrator",
+      "서비스 격리 및 네트워크 분할 테스트를 위한 멀티 VM Proxmox 환경",
+    tech: ["Proxmox VE", "Virtual Machines", "Network Segmentation"],
+    role: "System Administrator",
     challenges:
-      "Maintaining clear trust boundaries while enabling service-to-service communication.",
+      "서비스 간 통신을 유지하면서 명확한 신뢰 경계를 설정하는 것",
     lessons:
-      "Infrastructure architecture decisions made early reduce future migration complexity.",
+      "초기에 내린 인프라 아키텍처 결정이 이후 마이그레이션 복잡도를 줄여준다",
   },
   {
     title: "Arch Linux Mirror",
     icon: Waypoints,
     description:
-      "Self-hosted mirror infrastructure with Nginx for high-availability package delivery.",
+      "고가용성 패키지 전달을 위한 Nginx 기반 자체 미러 인프라",
     tech: ["Nginx", "Mirror Server", "Self-Hosting"],
-    role: "Mirror Maintainer",
-    challenges: "Keeping mirror synchronization reliable during update and peak windows.",
+    role: "Mirror Admin",
+    challenges: "업데이트 및 피크 시간대에 미러 동기화 신뢰성 유지",
     lessons:
-      "Automation and verification pipelines are essential for mirror consistency.",
+      "미러 일관성을 유지하려면 자동화와 검증 파이프라인이 필수적이다",
   },
   {
-    title: "Reverse Proxy Infrastructure",
+    title: "Reverse Proxy 인프라",
     icon: ShieldCheck,
     description:
-      "SSL-terminated reverse proxy stack that routes multiple internal services securely.",
+      "내부 서비스를 안전하게 라우팅하는 SSL 종단 리버스 프록시 스택",
     tech: ["Nginx", "SSL", "Reverse Proxy"],
     role: "Infrastructure Engineer",
     challenges:
-      "Designing safe public ingress while keeping route management maintainable.",
+      "안전한 공용 진입점을 설계하면서 라우팅 관리를 유지보수 가능하게 하는 것",
     lessons:
-      "Security and routing should be codified as baseline infrastructure, not one-off patches.",
+      "보안과 라우팅은 일회성 패치가 아닌 기본 인프라로 코드화되어야 한다",
   },
   {
-    title: "Startup Project — School Information Display System",
+    title: "스타트업 프로젝트 — 학교 정보 Display 시스템",
     icon: Terminal,
     description:
-      "Production backend and deployment infrastructure for school information display workflows.",
+      "학교 정보 Display 워크플로우를 위한 프로덕션 백엔드 및 배포 인프라",
     tech: ["Backend", "Server Management", "Deployment", "Infrastructure"],
-    role: "Backend & Infrastructure Engineer",
+    role: "Backend & Infra Engineer",
     challenges:
-      "Maintaining dependable deployments across iterative product changes.",
+      "반복적인 제품 변경 상황에서 안정적인 배포 유지",
     lessons:
-      "Operational reliability requires both robust systems and clear team communication.",
+      "운영 신뢰성은 견고한 시스템과 명확한 팀 커뮤니케이션이 함께 필요하다",
   },
   {
     title: "Discord Bot",
     icon: Code2,
     description:
-      "Node.js Discord bot for utility automation and community workflow integration.",
+      "유틸리티 자동화 및 커뮤니티 워크플로우 통합을 위한 Node.js Discord 봇",
     tech: ["Node.js"],
     role: "Backend Developer",
-    challenges: "Handling asynchronous events predictably across diverse command flows.",
+    challenges: "다양한 명령어 흐름에서 비동기 이벤트를 예측 가능하게 처리",
     lessons:
-      "Event-driven architecture builds strong debugging habits and API integration discipline.",
+      "이벤트 기반 아키텍처는 강력한 디버깅 습관과 API 통합 규율을 길러준다",
   },
   {
-    title: "Express Web Application",
+    title: "Express 웹 애플리케이션",
     icon: Network,
     description:
-      "Backend-focused Express application implementing REST API contracts and service logic.",
+      "REST API 계약과 서비스 로직을 구현한 백엔드 중심 Express 애플리케이션",
     tech: ["Express", "REST API", "Node.js"],
     role: "Backend Developer",
-    challenges: "Designing consistent API boundaries and maintainable service layering.",
+    challenges: "일관된 API 경계 설계와 유지보수 가능한 서비스 계층 구성",
     lessons:
-      "Clear contracts between routes and services keep features scalable and testable.",
+      "라우트와 서비스 간 명확한 계약이 기능의 확장성과 테스트 용이성을 보장한다",
   },
 ];
 
-const linuxJourney = ["Windows 10 지원종료", "ArchLinux", "Proxmox(서버)", "Cachyos"];
+const linuxJourney = ["Windows 10 EOL", "ArchLinux", "Proxmox", "CachyOS"];
 const learning = ["Docker", "Kubernetes", "CI/CD", "Cloud", "Distributed Systems"];
 const certifications = ["Linux"];
 const githubUsername = "cornsole";
@@ -383,7 +383,7 @@ export default function Home() {
       .slice(0, 3)
       .map((repo) => ({
         name: repo.name,
-        description: repo.description ?? "Repository description is not available yet.",
+        description: repo.description ?? "리포지토리 설명이 아직 없습니다.",
         language: repo.language ?? "Unknown",
         url: repo.html_url,
       }));
@@ -432,7 +432,7 @@ export default function Home() {
                 <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
                   <div className="space-y-5">
                     <h1 className="text-4xl font-thin leading-none tracking-tight md:text-5xl text-white">
-                      WOOJIN LIM
+                      Woojin Lim
                     </h1>
                     <div className="space-y-1 text-sm text-white/70 font-normal">
                       <p>Backend Developer</p>
@@ -440,9 +440,9 @@ export default function Home() {
                       <p>Self-Hosting &amp; Infrastructure</p>
                     </div>
                     <p className="max-w-2xl text-sm text-white/70 font-normal leading-relaxed">
-                      I started operating Minecraft servers in elementary school and gradually expanded
-                      my interests into Linux, networking, backend development, virtualization, and
-                      infrastructure engineering.
+                      초등학교 때 Minecraft 서버를 운영하기 시작한 것을 계기로
+                      Linux, 네트워킹, 백엔드 개발, 가상화, 인프라 엔지니어링까지
+                      점차 관심 분야를 넓혀왔습니다.
                     </p>
                     <div className="flex flex-wrap gap-3">
                       <a href="#projects" className={buttonVariants({ size: "lg" })}>
@@ -509,13 +509,13 @@ export default function Home() {
           {/* ── About / Timeline ── */}
           <SectionShell
             id="about"
-            title="About Me"
-            description="Timeline from first server operations to backend and infrastructure engineering."
+            title="About"
+            description="첫 서버 운영부터 백엔드·인프라 엔지니어링까지의 타임라인"
           >
             {timeline.length === 0 ? (
               <EmptyState
-                title="Timeline is not available."
-                description="Add milestones to show growth and engineering progression."
+                title="타임라인이 없습니다."
+                description="성장 과정을 보여줄 마일스톤을 추가해주세요."
               />
             ) : (
               <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
@@ -546,12 +546,12 @@ export default function Home() {
           <SectionShell
             id="skills"
             title="Skills"
-            description="Categorized stack for backend development, Linux operations, and infrastructure."
+            description="백엔드 개발, Linux 운영, 인프라 중심의 기술 스택"
           >
             {skills.length === 0 ? (
               <EmptyState
-                title="No skills found."
-                description="Add categorized skill groups to populate this section."
+                title="등록된 기술이 없습니다."
+                description="카테고리별 기술 그룹을 추가해주세요."
               />
             ) : (
               <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -578,13 +578,13 @@ export default function Home() {
           {/* ── Featured Projects ── */}
           <SectionShell
             id="projects"
-            title="Featured Projects"
-            description="Project summaries with stack, role, challenges, and lessons learned."
+            title="Projects"
+            description="기술 스택, 역할, 도전 과제, 배운 점을 포함한 프로젝트 요약"
           >
             {projects.length === 0 ? (
               <EmptyState
-                title="No featured projects yet."
-                description="Add project entries to surface engineering work and outcomes."
+                title="아직 등록된 프로젝트가 없습니다."
+                description="프로젝트를 추가하여 작업 결과를 보여주세요."
               />
             ) : (
               <div className="grid gap-3 lg:grid-cols-2">
@@ -628,8 +628,8 @@ export default function Home() {
 
           {/* ── Infrastructure Diagram ── */}
           <SectionShell
-            title="Infrastructure Diagram"
-            description="Typical service flow in a self-hosted backend setup."
+            title="Infrastructure"
+            description="자체 호스팅 백엔드 환경의 일반적인 서비스 흐름"
           >
             <div className="flex flex-col items-center gap-3 md:flex-row md:justify-center">
               {[
@@ -656,7 +656,7 @@ export default function Home() {
           {/* ── Linux Journey ── */}
           <SectionShell
             title="Linux Journey"
-            description="Operating system progression to daily infrastructure workflows."
+            description="데일리 인프라 워크플로우까지의 운영체제 발전 과정"
           >
             <div className="grid gap-3 md:grid-cols-4">
               {linuxJourney.map((step, index) => (
@@ -684,7 +684,7 @@ export default function Home() {
           {/* ── GitHub Statistics ── */}
           <SectionShell
             title="GitHub Statistics"
-            description="Contribution activity, pinned repositories, and language usage."
+            description="컨트리뷰션 활동, 고정 리포지토리, 언어 사용량"
           >
             <div className="grid gap-3 lg:grid-cols-[1.2fr_0.8fr]">
               <Card className="card-base rounded-lg">
@@ -695,8 +695,8 @@ export default function Home() {
                 <CardContent>
                   {graphState === "error" ? (
                     <ErrorState
-                      title="Contribution graph could not be loaded."
-                      description="Check network connectivity or graph source availability."
+                      title="컨트리뷰션 그래프를 불러올 수 없습니다."
+                      description="네트워크 연결 또는 그래프 소스 상태를 확인해주세요."
                     />
                   ) : (
                     <div className="rounded-lg border border-border p-2">
@@ -705,7 +705,7 @@ export default function Home() {
                       )}
                       <Image
                         src={`https://ghchart.rshah.org/4F8CFF/${githubUsername}`}
-                        alt={`GitHub contribution graph for ${githubUsername}`}
+                        alt={`${githubUsername}의 GitHub 컨트리뷰션 그래프`}
                         className={cn(
                           "w-full rounded-lg transition-opacity duration-300",
                           graphState === "loading" ? "opacity-0" : "opacity-100",
@@ -724,20 +724,20 @@ export default function Home() {
               <div className="grid gap-3">
                 <Card className="card-base rounded-lg">
                   <CardHeader>
-                    <CardTitle className="text-sm font-normal text-white/90">Pinned Repositories</CardTitle>
+                    <CardTitle className="text-sm font-normal text-white/90">Pinned Repos</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
                     {repoError ? (
                       <ErrorState
-                        title="GitHub data failed to load."
-                        description="Check network connectivity or API rate limits."
+                        title="GitHub 데이터를 불러오지 못했습니다."
+                        description="네트워크 연결 또는 API 제한을 확인해주세요."
                       />
                     ) : isLoading ? (
                       <div className="h-24 animate-pulse rounded-lg bg-white/[0.03]" />
                     ) : pinnedRepos.length === 0 ? (
                       <EmptyState
-                        title="Pinned repositories are empty."
-                        description="Add repository data to show featured codebases."
+                        title="고정된 리포지토리가 없습니다."
+                        description="리포지토리 데이터를 연결하면 여기에 표시됩니다."
                       />
                     ) : (
                       pinnedRepos.map((repo, index) => (
@@ -765,20 +765,20 @@ export default function Home() {
 
                 <Card className="card-base rounded-lg">
                   <CardHeader>
-                    <CardTitle className="text-sm font-normal text-white/90">Most Used Languages</CardTitle>
+                    <CardTitle className="text-sm font-normal text-white/90">Top Languages</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     {repoError ? (
                       <ErrorState
-                        title="Language statistics are unavailable."
-                        description="Check network connectivity or API rate limits."
+                        title="언어 통계를 사용할 수 없습니다."
+                        description="네트워크 연결 또는 API 제한을 확인해주세요."
                       />
                     ) : isLoading ? (
                       <div className="h-24 animate-pulse rounded-lg bg-white/[0.03]" />
                     ) : languages.length === 0 ? (
                       <EmptyState
-                        title="Language data is unavailable."
-                        description="Connect repository language statistics to populate this panel."
+                        title="언어 데이터가 없습니다."
+                        description="리포지토리 언어 통계를 연결해주세요."
                       />
                     ) : (
                       languages.map((language) => (
@@ -820,13 +820,13 @@ export default function Home() {
                     <GraduationCap className="size-4 text-primary/60" />
                     <CardTitle className="text-sm font-normal text-white/90">Learning</CardTitle>
                   </div>
-                  <CardDescription className="text-xs font-normal text-white/50">Currently exploring</CardDescription>
+                  <CardDescription className="text-xs font-normal text-white/50">현재 탐구 중인 분야</CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-1.5">
                   {learning.length === 0 ? (
                     <EmptyState
-                      title="Learning topics are empty."
-                      description="Add active learning goals to show technical growth."
+                      title="학습 중인 항목이 없습니다."
+                      description="기술 성장을 위해 학습 목표를 추가해주세요."
                     />
                   ) : (
                     learning.map((item) => (
@@ -844,13 +844,13 @@ export default function Home() {
                     <ShieldCheck className="size-4 text-primary/60" />
                     <CardTitle className="text-sm font-normal text-white/90">Certifications</CardTitle>
                   </div>
-                  <CardDescription className="text-xs font-normal text-white/50">Future goals</CardDescription>
+                  <CardDescription className="text-xs font-normal text-white/50">목표</CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-1.5">
                   {certifications.length === 0 ? (
                     <EmptyState
-                      title="Certification goals are empty."
-                      description="Define certification targets to clarify long-term direction."
+                      title="자격증 목표가 없습니다."
+                      description="장기적인 방향성을 위해 자격증 목표를 설정해주세요."
                     />
                   ) : (
                     certifications.map((item) => (
@@ -870,7 +870,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="text-2xl font-light tracking-tight text-white/90">Contact</CardTitle>
                 <CardDescription className="mt-1 text-xs font-light text-white/50">
-                  Open to backend, Linux, and infrastructure collaboration.
+                  백엔드, Linux, 인프라 협업 관련 문의는 언제든 환영합니다.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-wrap gap-3">
