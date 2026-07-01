@@ -1,0 +1,61 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Backend Developer Portfolio",
+  description:
+    "High school backend developer portfolio focused on Linux, networking, self-hosting, and infrastructure engineering.",
+  keywords: [
+    "backend developer",
+    "linux",
+    "self-hosting",
+    "infrastructure",
+    "networking",
+    "proxmox",
+    "nginx",
+  ],
+  openGraph: {
+    title: "Backend Developer Portfolio",
+    description:
+      "High school backend developer portfolio focused on Linux, networking, self-hosting, and infrastructure engineering.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Backend Developer Portfolio",
+    description:
+      "High school backend developer portfolio focused on Linux, networking, self-hosting, and infrastructure engineering.",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
+    >
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+        />
+      </head>
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}
