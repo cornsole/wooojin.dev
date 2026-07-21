@@ -884,7 +884,7 @@ export default function Home() {
                   GitHub
                 </a>
                 <a
-                  href="mailto:contact@wooojin.dev"
+                  href="mailto:me@wooojin.dev"
                   className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "min-w-36")}
                 >
                   <Mail />
